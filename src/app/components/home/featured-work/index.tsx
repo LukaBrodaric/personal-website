@@ -23,7 +23,7 @@ const FeaturedWork = () => {
     }, [])
 
     return (
-        <section>
+        <section id="projects">
             <div className="container">
                 <div className="border-x border-primary/10">
                     <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
@@ -38,7 +38,12 @@ const FeaturedWork = () => {
                                     key={index}
                                     className="group flex flex-col gap-3.5 sm:gap-5 p-3.5 sm:p-6 border-primary/10 sm:border-l first:sm:border-l-0 lg:first:border-l-0 lg:[&:nth-child(4n+1)]:border-l-0"
                                 >
-                                    <Link href={value?.link || "/"} className="overflow-hidden">
+                                    <Link 
+                                        href={value?.link || "/"} 
+                                        className="overflow-hidden"
+                                        target="_blank"
+                                        rel="nofollow noopener noreferrer"
+                                    >
                                         <Image
                                             src={value?.image}
                                             alt="Image"
@@ -48,7 +53,13 @@ const FeaturedWork = () => {
                                         />
                                     </Link>
                                     <div className="flex flex-col gap-1 sm:gap-2 px-2">
-                                        <Link href={value?.link || "/"}><h4>{value?.title}</h4></Link>
+                                        <Link 
+                                            href={value?.link || "/"}
+                                            target="_blank"
+                                            rel="nofollow noopener noreferrer"
+                                        >
+                                            <h4>{value?.title}</h4>
+                                        </Link>
                                         <div className="flex">
                                             <p>{value?.description}</p>
                                         </div>

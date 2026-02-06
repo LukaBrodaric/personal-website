@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
+import Navigation from "./components/layout/header"; // Dodaj putanju gdje si kreirao Navigation komponentu
+
+
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -17,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Luka Brodarič | Digital Growth Specialist",
     description: "Building modern digital solutions that drive real business results.",
-    url: "https://tvojadomena.com",
+    url: "https://brodaric.xyz",
     siteName: "Luka Brodarič Portfolio",
     locale: "en_US",
     type: "website",
@@ -32,8 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <Navigation />
         <Header/>
-        {children}
+        {children} {/* Bez <main> wrappera i paddinga */}
         <Footer/>
       </body>
     </html>

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 const AboutMe = () => {
     const servicesBedge = ["Digital Marketing", "Web Design", "Email Marketing", "Brand Identity", "SEO Optimization", "Paid Advertising", "Sales Funnel Development", "Conversion Rate Optimization", "E-commerce Development", "AI Automation"];
     return (
-        <section>
+        <section id="about">
             <div className="container">
                 <div className="border-x border-primary/10 bg-[url('/images/about-me/about-me-bg.svg')] bg-cover bg-center bg-no-repeat">
                     <div className="flex flex-col gap-9 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
