@@ -65,7 +65,7 @@ const projectOverview = {
 
     ],
     sideProjects: [
-        { name: "Descrify", url: "https://descrify.xyz" },
+        { name: "Descrify", url: "https://descrify.xyz/" },
        /* { name: "Gridsnap", comingSoon: true }, */
         { name: "Bonko", comingSoon: true },
      /* { name: "Siteflow Page Builder", comingSoon: true }, */
