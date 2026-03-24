@@ -73,13 +73,23 @@ const featureWork = [
     },
     {
         title: "Luxury Villa Website & Booking System",
-        description: "Designed and developed a premium website for a luxury villa, including a fully integrated booking engine with real-time availability, online reservations, and secure payment processing.",
+        description: "A modern, SEO-optimized and multilingual website built with Astro, focused on high performance, premium design, and strong conversion.",
         roles: [
             "UX Designer",
             "Framer Designer"
         ],
         image: "/images/feature-work/project-3.png",
         link: "https://villaostrocroatia.com/"
+    },
+    {
+        title: "Real Estate Photography Website – Istria 2nd Home",
+        description: "Designed and developed a premium website for a luxury villa, including a fully integrated booking engine with real-time availability, online reservations, and secure payment processing.",
+        roles: [
+            "UX Designer",
+            "Framer Designer"
+        ],
+        image: "/images/feature-work/project-6.png",
+        link: "https://fotonekretnine.hr/"
     },
     {
         title: "Ecommerce Webshop Development + Marketing Strategy",
