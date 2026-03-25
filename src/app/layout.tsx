@@ -13,17 +13,42 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Luka Brodarič | Digital Growth Specialist",
-  description: "Digital marketing and web development specialist from Pula, Croatia. Building AI-powered solutions, conversion-focused websites, and data-driven marketing strategies.",
-  keywords: ["digital marketing", "web development", "AI solutions", "Pula Croatia", "SEO", "e-commerce"],
+  title: {
+    default: "Luka Brodarič | Digital Growth Specialist",
+    template: "%s | Luka Brodarič",
+  },
+  description: "Luka Brodarič - Digital marketing and web development specialist from Pula, Croatia. Building AI-powered solutions, conversion-focused websites, and data-driven marketing strategies. Portfolio and projects.",
+  keywords: ["Luka Brodarič", "Luka Brodaric", "digital marketing specialist", "web developer Pula", "web development Croatia", "AI solutions", "SEO expert", "e-commerce", "digital growth", "Pula Croatia", "portfolio"],
   authors: [{ name: "Luka Brodarič" }],
+  creator: "Luka Brodarič",
+  publisher: "Luka Brodarič",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Luka Brodarič | Digital Growth Specialist",
-    description: "Building modern digital solutions that drive real business results.",
+    description: "Luka Brodarič - Digital marketing and web development specialist from Pula, Croatia. Building AI-powered solutions and data-driven marketing strategies.",
     url: "https://brodaric.xyz",
-    siteName: "Luka Brodarič Portfolio",
+    siteName: "Luka Brodarič",
     locale: "en_US",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://brodaric.xyz",
+    languages: {
+      en: "https://brodaric.xyz",
+    },
+  },
+  verification: {
+    google: "google-site-verification-code",
   },
 };
 
@@ -32,12 +57,40 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Luka Brodarič",
+    url: "https://brodaric.xyz",
+    jobTitle: "Digital Growth Specialist",
+    nationality: "Croatian",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Pula",
+      addressCountry: "HR",
+    },
+    sameAs: [
+      "https://linkedin.com/in/lukabrodaric",
+      "https://github.com/lukabrodaric",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Freelance",
+    },
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>
         <Navigation />
         <Header/>
-        {children} {/* Bez <main> wrappera i paddinga */}
+        {children}
         <Footer/>
       </body>
     </html>
