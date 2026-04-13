@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Luka/Desktop/personal-website/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 2000, height: 2000 }\n"],"names":[],"mappings":";;;;AAAA;;uCACe;IAAE,KAAA,0IAAG;IAAE,OAAO;IAAM,QAAQ;AAAK"}}]
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Luka/Desktop/Web%20projets/Brodaric.xyz/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 2000, height: 2000 }\n"],"names":[],"mappings":";;;;AAAA;;uCACe;IAAE,KAAA,0IAAG;IAAE,OAAO;IAAM,QAAQ;AAAK"}}]
 }

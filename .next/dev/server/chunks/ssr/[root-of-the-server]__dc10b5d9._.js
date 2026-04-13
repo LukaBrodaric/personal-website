@@ -146,63 +146,131 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 const metadata = {
-    title: "Luka Brodarič | Digital Growth Specialist",
-    description: "Digital marketing and web development specialist from Pula, Croatia. Building AI-powered solutions, conversion-focused websites, and data-driven marketing strategies.",
+    title: {
+        default: "Luka Brodarič | Digital Growth Specialist",
+        template: "%s | Luka Brodarič"
+    },
+    description: "Luka Brodarič - Digital marketing and web development specialist from Pula, Croatia. Building AI-powered solutions, conversion-focused websites, and data-driven marketing strategies. Portfolio and projects.",
     keywords: [
-        "digital marketing",
-        "web development",
+        "Luka Brodarič",
+        "Luka Brodaric",
+        "digital marketing specialist",
+        "web developer Pula",
+        "web development Croatia",
         "AI solutions",
+        "SEO expert",
+        "e-commerce",
+        "digital growth",
         "Pula Croatia",
-        "SEO",
-        "e-commerce"
+        "portfolio"
     ],
     authors: [
         {
             name: "Luka Brodarič"
         }
     ],
+    creator: "Luka Brodarič",
+    publisher: "Luka Brodarič",
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+        }
+    },
     openGraph: {
         title: "Luka Brodarič | Digital Growth Specialist",
-        description: "Building modern digital solutions that drive real business results.",
+        description: "Luka Brodarič - Digital marketing and web development specialist from Pula, Croatia. Building AI-powered solutions and data-driven marketing strategies.",
         url: "https://brodaric.xyz",
-        siteName: "Luka Brodarič Portfolio",
+        siteName: "Luka Brodarič",
         locale: "en_US",
         type: "website"
+    },
+    alternates: {
+        canonical: "https://brodaric.xyz",
+        languages: {
+            en: "https://brodaric.xyz"
+        }
+    },
+    verification: {
+        google: "google-site-verification-code"
     }
 };
 function RootLayout({ children }) {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Luka Brodarič",
+        url: "https://brodaric.xyz",
+        jobTitle: "Digital Growth Specialist",
+        nationality: "Croatian",
+        address: {
+            "@type": "PostalAddress",
+            addressLocality: "Pula",
+            addressCountry: "HR"
+        },
+        sameAs: [
+            "https://linkedin.com/in/lukabrodaric",
+            "https://github.com/lukabrodaric"
+        ],
+        worksFor: {
+            "@type": "Organization",
+            name: "Freelance"
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
         suppressHydrationWarning: true,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-            className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_f008a7bc$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className,
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$layout$2f$header$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                    type: "application/ld+json",
+                    dangerouslySetInnerHTML: {
+                        __html: JSON.stringify(jsonLd)
+                    }
+                }, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 38,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$layout$2f$header$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 39,
-                    columnNumber: 9
-                }, this),
-                children,
-                " ",
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$layout$2f$footer$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 41,
+                    lineNumber: 85,
                     columnNumber: 9
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/layout.tsx",
-            lineNumber: 37,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/src/app/layout.tsx",
+                lineNumber: 84,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+                className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_f008a7bc$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$layout$2f$header$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 91,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$layout$2f$header$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 92,
+                        columnNumber: 9
+                    }, this),
+                    children,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$layout$2f$footer$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 94,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/layout.tsx",
+                lineNumber: 90,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 36,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }

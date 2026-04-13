@@ -52,14 +52,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 ;
 const featureWork = [
     {
-        title: "Descrify",
-        description: "AI-powered tool for generating SEO-optimized real estate descriptions from structured property data. Built with Next.js, TypeScript, and powered by Gemini AI.",
+        title: "Apartments Punta Premantura",
+        description: "Designed and developed a high-end, SEO-optimized apartment website for a rental 5-unit property in Premantura near Rt Kamenjak using Astro and Tailwind, focused on modern UX and direct booking inquiries.",
         roles: [
             "UX Designer",
             "Framer Designer"
         ],
-        image: "/images/feature-work/project-4.png",
-        link: "https://descrify.xyz/"
+        image: "/images/feature-work/project-7.png",
+        link: "https://punta-premantura.com/"
     },
     {
         title: "EDIH Adria - AI & Digital Innovation Project",
@@ -90,6 +90,16 @@ const featureWork = [
         ],
         image: "/images/feature-work/project-6.png",
         link: "https://fotonekretnine.hr/"
+    },
+    {
+        title: "Descrify",
+        description: "AI-powered tool for generating SEO-optimized real estate descriptions from structured property data. Built with Next.js, TypeScript, and powered by Gemini AI.",
+        roles: [
+            "UX Designer",
+            "Framer Designer"
+        ],
+        image: "/images/feature-work/project-4.png",
+        link: "https://descrify.xyz/"
     },
     {
         title: "Ecommerce Webshop Development + Marketing Strategy",
