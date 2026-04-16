@@ -3,6 +3,18 @@ import { NextResponse } from "next/server";
 const experienceData = [
     {
        /* icon: "/images/icon/tailwind-icon.svg", */
+        role: "Paid advertising specialist - Virtualna Tvornica",
+        location: "Remote",
+        startYear: "2026",
+        /* endYear: "2024",*/
+        bulletPoints: [  
+            "Managed and optimized Google Ads campaigns (Search, Display, YouTube) to drive qualified traffic and conversions",
+            "Conducted keyword research, competitor analysis, and search intent mapping.",
+            "Conducted technical SEO audits and identified opportunities for organic growth."
+        ]
+    },
+    {
+       /* icon: "/images/icon/tailwind-icon.svg", */
         role: "Digital Marketing Manager - Intouch Interface",
         location: "Pula, Croatia",
         startYear: "2022",
